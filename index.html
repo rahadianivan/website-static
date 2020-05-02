@@ -32,9 +32,59 @@
         <p>Shift Academy bootcamp untuk menjadi fulstack developer. ellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
         <br>
         <video width="320" height="240" controls>
-            <source src="https://www.w3schools.com/html/mov.bbb.mp4" type="video/mp4">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
+        <br>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/W3B2C0nNpFU" frameborder="4" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <form action="profile.html">
+            <div>
+                <label for="fulname">Fullname</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Tulis nama">
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Masukkan password anda">
+            </div>
+            <div>
+                <label for="date">Birthdate</label>
+                <input type="date" id="date" name="date">
+            </div>
+            <div>
+                <label for="gender">Gender</label>
+                <input type="radio" id="gender" name="gender">Male<br>
+                <input type="radio" id="gender" name="gender">Female<br>
+                <input type="radio" id="gender" name="gender" disabled>Undifined<br>
+            </div>
+            <div>
+                <label for="hobi">Hobi</label>
+                <input type="checkbox" id="hobi" name="gender">Coding<br>
+                <input type="checkbox" id="hobi" name="hobi">Gaming<br>
+                <input type="checkbox" id="hobi" name="hobi">Browsing<br>
+            </div>
+            <div>
+                <label for="domisili">Domisili</label>
+                <select name="domisili" id="domisili">
+                    <option  value="jakarta">Jakarta</option>
+                    <option  value="jogja">Jogjakarta</option>
+                    <option  value="bandung" selected>Bandung</option>
+                    <option  value="banten" disabled>Banten</option>
+                </select><br>
+            </div>
+            <div>
+                <label for="alamat">Alamat</label>
+                <textarea name="alamat" id="alamat" cols="30" rows="15"></textarea>
+            </div>
+            <div>
+                <label for="file">Foto Profile</label>
+                <input type="file" name="file" id="file">
+            </div>
+            <div>
+                <input type="submit" value="Send">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
     </div>
 </body>
 </html>
