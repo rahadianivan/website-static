@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
 </head>
-<body>
-    <h1>Hallo</h1>
+<body onload="getFullname()">
+    <h1>Hallo <span id="nama"></span></h1>
 </body>
+<script>
+    function getFullname(){
+        var url = new URL(window.location.href)
+        var fullname = url.searchParams.get("fullname")
+        document.getElementById("nama").innerHTML = fullname
+    }
+</script>
 </html>
