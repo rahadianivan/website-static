@@ -1,88 +1,314 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    
-    <link rel="stylesheet" href="style_detail.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Title</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+        <style>
+            .stock{
+                display: flex; 
+                flex-wrap: nowrap;
+                height: auto;
+                margin: 0px;
+            }
+            .css{
+                flex-shrink: 0;
+                align-self: center;
+                min-width: 0px;
+                margin-left: 0px;
+                border-left: none; 
+            }
+            .satu{
+                width: 20px; 
+                height: 20px;
+                cursor: pointer;
+                background-image: url(https://ecs7.tokopedia.net/assets-tokopedia-lite/v2/zeus/production/571d1599.svg);
+                background-size: 20px 20px;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+            .value{
+                margin-bottom: 0px;
+                width: 20%;
+                border-top-width: initial;
+                border-right-width: initial;
+                border-left-width: initial;
+                                                border-top-color: initial;
+                                                border-right-color: initial;
+                                                border-left-color: initial;
+                                                box-shadow: none;
+                                                line-height: 22px;
+                                                font-size: 16px;
+                                                padding: 1px;
+                                                border-style: none none solid;
+                                                border-image: initial;
+                                                border-bottom: 1px solid rgb(229, 231, 233);
+                                                border-radius: 0px;
+                                                text-align: center;
+                                                outline: none;
+            }
+            .dua{
+                width: 20px;
+                                                height: 20px;
+                                                cursor: pointer;
+                                                background-image: url(https://ecs7.tokopedia.net/assets-tokopedia-lite/v2/zeus/production/1a4a7fe0.svg);
+                                                background-size: 20px 20px;
+                                                background-position: center center;
+                                                background-repeat: no-repeat;
+            }
+            .garis{
+                                        display: inline-block;
+                                        padding: 0px 16px;
+                                        border-right: 1px solid rgb(229, 231, 233);
+            }
+        </style>
+    </head>
+    <body>
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 pt-2 pl-1">
+                        <img src="images/kueh.jpg" class="rounded" width="370px" height="400px" alt="" srcset="">
+                    </div>
+                    <div class="col-sm">
+                        <div class="row">
+                            
+                                <div class="col-12">
+                                      <img src="images/icon/power.png" width="20px" height="20px" alt="">
+                                      <span style="font-size:12px; color: green;">Power Merchent </span>
+                                </div>
+                                <div class="col-12">
+                                    <h3 class="pl-0 pt-1">Abon Ayam Karwati</h3>
+                                </div>
+                                <div class="col-12" style="margin-top: -1px;">
+                                    <p style="font-size:10px; color: gray;">
+                                        <span style="font-size:10px; color:thistle;">4.8</span>
+                                        <span style="font-size: 10px; color: yellow;"> 
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </span>
+                                        <span style="color:thistle; font-size: 10px;">(13)</span>
+                                        <span style="color: thistle; font-size: 12px;">.</span>
+                                        Terjual 226 Produk
+                                        <span style="color: thistle;">(96%)</span>
+                                        . 2329x 
+                                        <span style="color: thistle;">Dilihat</span>
+                                    </p>
+                                    </div>
+                        </div>
+                        <div class="row" style="margin-top: -20px;">
+                            <hr width="700px" style="margin-left:15px; border:1px solid #E5E7E9;">
+                        </div>
+                        <div class="row" style="margin-top: -20px;">
+                            <div class="col-2">
+                                <p>
+                                    <h6 style="font-weight:bold; color: grey;">  HARGA</h6>
+                                </p>
+                            </div>
+                            <div class="col-3">
+                                <P>
+                                   <h4 style="color: orange;" class="font-weight-bold">Rp16.000</h4> 
+                                </P>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top: -20px;">
+                            <hr width="700px" style="margin-left:15px; border:1px solid #E5E7E9;">
+                        </div>
+                        <div class="row"  style="margin-top: -20px;">
+                            <div class="col-2">
+                                <p>
+                                    <h6 style="font-weight:bold; color: grey;">JUMLAH</h6>
+                                </p>
+                            </div>
+                            <div class="col-10">
+                                <P>
+                                   <h6><small>Stok tersedia</small></h6>
+                                </P>
+                                <div class="stok">
+                                    
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  </head>
-  <body>
-      <!-- Review -->
-    <div class="wrapper">
-      <h4>Ulasan (250)</h4>
-      <h6>Nama Produk</h6>
-    </div>
-    <div class="row">
-      <div class="col-1">
-        <h1>5/5</h1>
-        <div class="star"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></div>
-        <p>(250) Ulasan</p>
+                                    <div class="css">
+                                        <div class="row">
+                                                <div class="col-6">
+                                                    <div style="display: flex;align-content: center;">
+                                                        <i class="satu"></i>
+                                                        <input class="value" type="text" max="999751" min="1" value="1">
+                                                        <i class="dua"></i>
+                                                        <span style="padding-left:20px;font-size: 13px;">Minimal pembelian</span>
+                                                    </div>
+                                                    <p style="padding-top: 3px; color: rgb(66, 181, 73);">
+                                                        <small>Tulis catatan untuk penjual</small>
+                                                    </p>
+                                                </div>
+                                            
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top: -10px;">
+                            <hr width="700px" style="margin-left:15px; border:1px solid #E5E7E9;">
+                        </div>
+                        <div class="row"  style="margin-top: -20px;">
+                            <div class="col-2">
+                                <p>
+                                    <h6 style="font-weight:bold; color: grey;">INFO PRODUK</h6>
+                                </p>
+                            </div>
+                            <div class="col-7" style="margin-top: 15px;">
+                                    <div class="row">
+                                        <div class="col-2 garis">
+                                            <dt>
+                                                <p><small class="text-black-50">Berat</small>
+                                                </p>
+                                            </dt>
+                                            <dd style="position:absolute; top:30px;">
+                                               <small><p class="font-weight-bold">75gr</p></small> 
+                                            </dd>
+                                            
+                                        </div>
+                                        <div class="col-3 garis">
+                                            <dt>                                               
+                                                 <p><small class="text-black-50">Kondisi</small>
+                                            </p>
+                                            </dt>
+                                            <dd style="position:absolute; top:30px;">
+                                               <small><p class="font-weight-bold">Baru</p></small> 
+                                            </dd>
+                                              
+                                          </div>
+                                          <div class="col-3 garis">
+                                              <dt>
+                                                <p><small class="text-black-50">Asuransi</small>
+                                                </p>
+                                              </dt>
+                                              <dd style="position:absolute; top:30px;">
+                                                <small><p class="font-weight-bold">Opsional</p></small>
+                                                
+                                              </dd>
+                                              
+                                          </div>
+                                          <div class="col-3">
+                                              <dt>
+                                                <p><small class="text-black-50">etalse</small>
+                                                </p>
+                                              </dt>
+                                            <dd style="position:absolute; top:30px;">
+                                                <small>
+                                                    <p class="font-weight-bold" style="color: rgb(66, 181, 73);">Printed Tee</p>
+                                                </small>
+                                                
+                                            </dd>
+                                              
+                                          </div>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top: 0px;">
+                            <hr width="700px" style="margin-left:15px; border:1px solid #E5E7E9;">
+                        </div>
+                        <div class="row"  style="margin-top: -20px; ">
+                            <div class="col-2">
+                                <p>
+                                    <h6 style="font-weight:bold; color: grey;">ONGKOS KIRIM</h6>
+                                </p>
+                            </div>
+                            <div class="col-5" >
+                                <P>
+                                    <dt class="text-black-50;">
+                                        <small>Ke <span  style="color: black; font-weight: bold;">Jakarta Barat, Cengkareng </span></small> 
+                                        
+                                    </dt>
+                                     <dd>
+                                         <small>Dari Kab. Bandung</small> 
+                                     </dd>                  
+                                   <span></span>
+                                </P>
+                            </div>
+                            <div class="col-5 mt-3" style="padding-left:160px;">
+                                <small><span class="text-muted"> Mulai dari Rp.11.000</span></small>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Review -->
+      <div class="wrapper">
+        <h4>Ulasan (250)</h4>
+        <h6>Nama Produk</h6>
       </div>
-      <div class="col-8">
-          <div class="row">
-            <div class="side">
-              <div><i class="fa fa-star" aria-hidden="true"></i>5</div>
-            </div>
-            <div class="middle">
-              <div class="bar-container">
-                <div class="bar-5"></div>
+      <div class="row">
+        <div class="col-1">
+          <h1>5/5</h1>
+          <div class="star"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></div>
+          <p>(250) Ulasan</p>
+        </div>
+        <div class="col-8">
+            <div class="row">
+              <div class="side">
+                <div><i class="fa fa-star" aria-hidden="true"></i>5</div>
+              </div>
+              <div class="middle">
+                <div class="bar-container">
+                  <div class="bar-5"></div>
+                </div>
+              </div>
+              <div class="side right">
+                <div>250</div>
+              </div>
+              <div class="side">
+                <div><i class="fa fa-star" aria-hidden="true"></i>4</div>
+              </div>
+              <div class="middle">
+                <div class="bar-container">
+                  <div class="bar-4"></div>
+                </div>
+              </div>
+              <div class="side right">
+                <div>0</div>
+              </div>
+              <div class="side">
+                <div><i class="fa fa-star" aria-hidden="true"></i>3</div>
+              </div>
+              <div class="middle">
+                <div class="bar-container">
+                  <div class="bar-3"></div>
+                </div>
+              </div>
+              <div class="side right">
+                <div>0</div>
+              </div>
+              <div class="side">
+                <div><i class="fa fa-star" aria-hidden="true"></i>2</div>
+              </div>
+              <div class="middle">
+                <div class="bar-container">
+                  <div class="bar-2"></div>
+                </div>
+              </div>
+              <div class="side right">
+                <div>0</div>
+              </div>
+              <div class="side">
+                <div><i class="fa fa-star" aria-hidden="true"></i>1</div>
+              </div>
+              <div class="middle">
+                <div class="bar-container">
+                  <div class="bar-1"></div>
+                </div>
+              </div>
+              <div class="side right">
+                <div>0</div>
               </div>
             </div>
-            <div class="side right">
-              <div>250</div>
-            </div>
-            <div class="side">
-              <div><i class="fa fa-star" aria-hidden="true"></i>4</div>
-            </div>
-            <div class="middle">
-              <div class="bar-container">
-                <div class="bar-4"></div>
-              </div>
-            </div>
-            <div class="side right">
-              <div>0</div>
-            </div>
-            <div class="side">
-              <div><i class="fa fa-star" aria-hidden="true"></i>3</div>
-            </div>
-            <div class="middle">
-              <div class="bar-container">
-                <div class="bar-3"></div>
-              </div>
-            </div>
-            <div class="side right">
-              <div>0</div>
-            </div>
-            <div class="side">
-              <div><i class="fa fa-star" aria-hidden="true"></i>2</div>
-            </div>
-            <div class="middle">
-              <div class="bar-container">
-                <div class="bar-2"></div>
-              </div>
-            </div>
-            <div class="side right">
-              <div>0</div>
-            </div>
-            <div class="side">
-              <div><i class="fa fa-star" aria-hidden="true"></i>1</div>
-            </div>
-            <div class="middle">
-              <div class="bar-container">
-                <div class="bar-1"></div>
-              </div>
-            </div>
-            <div class="side right">
-              <div>0</div>
-            </div>
-          </div>
-      </div>
+        </div>
     </div>
 
     <div class="container-fluid">
@@ -184,10 +410,9 @@
 
     </div>
     <!-- Review -->
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+            </div>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </html>
